@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.news"
+    namespace = "com.example.taskManager"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.news"
+        applicationId = "com.example.taskManager"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
@@ -97,6 +97,7 @@ dependencies {
     implementation (libs.androidx.room.runtime.v250)
     kapt(libs.androidx.room.compiler)
     implementation (libs.androidx.room.ktx.v250)
+    kapt(libs.kotlinx.metadata.jvm) // or latest
 
 
     testImplementation(libs.junit)
