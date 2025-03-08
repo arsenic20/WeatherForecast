@@ -1,8 +1,8 @@
 [versions]
-agp = "8.6.0"
-androidxHiltCompiler = "1.0.0"
-androidxHiltCompilerVersion = "1.1.0-beta01"
-androidxRoomRuntime = "2.5.0"
+agp = "8.6.1"
+androidxHiltCompiler = "1.2.0"
+androidxHiltCompilerVersion = "1.2.0"
+androidxRoomRuntime = "2.6.1"
 coilCompose = "2.4.0"
 converterGson = "2.11.0"
 hiltAndroidTesting = "2.54"
@@ -18,20 +18,21 @@ junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 kotlinxMetadataJvm = "0.5.0"
 lifecycleRuntimeKtx = "2.8.7"
-activityCompose = "1.9.3"
-composeBom = "2024.04.01"
-lifecycleRuntimeKtxVersion = "2.8.6"
-lifecycleViewmodelCompose = "2.8.5"
-lifecycleViewmodelKtx = "2.8.6"
-lifecycleViewmodelKtxVersion = "2.2.0"
-material = "1.7.6"
-navigationCompose = "2.8.5"
+activityCompose = "1.10.1"
+composeBom = "2025.02.00"
+lifecycleRuntimeKtxVersion = "2.8.7"
+lifecycleViewmodelCompose = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+lifecycleViewmodelKtxVersion = "2.8.7"
+material = "1.7.8"
+navigationCompose = "2.8.8"
 retrofit = "2.11.0"
-roomCompiler = "2.5.2"
-roomCompilerVersion = "2.5.0"
-roomKtx = "2.5.0"
+roomCompiler = "2.6.1"
+roomCompilerVersion = "2.6.1"
+roomKtx = "2.6.1"
 roomRuntime = "2.6.1"
-roomRuntimeVersion = "2.5.2"
+roomRuntimeVersion = "2.6.1"
+storage = "1.5.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -82,6 +83,7 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 kotlinx-metadata-jvm = { module = "org.jetbrains.kotlinx:kotlinx-metadata-jvm", version.ref = "kotlinxMetadataJvm" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-storage = { group = "androidx.test.services", name = "storage", version.ref = "storage" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
