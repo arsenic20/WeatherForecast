@@ -87,6 +87,7 @@ dependencies {
 
     //Dagger-Hil
     implementation(libs.dagger.hilt.android)
+    implementation(libs.androidx.storage)
     kapt(libs.hilt.compiler)
 
     //RetroFit
@@ -97,7 +98,6 @@ dependencies {
     implementation (libs.androidx.room.runtime.v250)
     kapt(libs.androidx.room.compiler)
     implementation (libs.androidx.room.ktx.v250)
-    kapt(libs.kotlinx.metadata.jvm) // or latest
 
 
     testImplementation(libs.junit)
