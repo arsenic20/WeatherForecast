@@ -5,6 +5,6 @@
     <string name="saving_data">Saving blog..</string>
     <string name="data_already_added">Blog already saved..</string>
     <string name="save">Save</string>
-    <string name="no_blogs_found">No blog available..</string>
+    <string name="no_task_found">No task available..</string>
     <string name="no_blog_saved">No blog saved..</string>
 </resources>
