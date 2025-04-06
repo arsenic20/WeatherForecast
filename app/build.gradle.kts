@@ -66,6 +66,9 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
 
+    //coil
+    implementation(libs.coil.compose.v250)
+
     //ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.compose)
 
@@ -75,6 +78,7 @@ dependencies {
     //Dagger-Hil
     implementation(libs.dagger.hilt.android)
     implementation(libs.androidx.storage)
+    implementation(libs.androidx.ui.test.android)
     kapt(libs.hilt.compiler)
 
     //RetroFit
