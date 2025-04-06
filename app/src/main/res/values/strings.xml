@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
-    <string name="saved_blogs">Saved Blogs</string>
-    <string name="blogs">Blogs</string>
-    <string name="saving_data">Saving blog..</string>
-    <string name="data_already_added">Blog already saved..</string>
-    <string name="save">Save</string>
-    <string name="no_task_found">No task available..</string>
-    <string name="no_blog_saved">No blog saved..</string>
+    <string name="no_data_found">No Data Found..</string>
+    <string name="search_by_city">Search by city..</string>
+    <string name="enter_city_prompt">Please enter city ..</string>
+    <string name="search_city">Search city..</string>
+    <string name="refresh_weather">Refresh Weather..</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.weatherForecast.ui.theme.weather
+package com.example.weatherForecast.screens.weather
 
 import com.example.weatherForecast.local.WeatherEntity
 
