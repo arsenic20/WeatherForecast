@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Task Manager</string>
+    <string name="app_name">Weather Forecast</string>
     <string name="saved_blogs">Saved Blogs</string>
     <string name="blogs">Blogs</string>
     <string name="saving_data">Saving blog..</string>

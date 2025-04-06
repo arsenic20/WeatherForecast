@@ -1,4 +1,4 @@
-package com.example.taskManager.ui.theme
+package com.example.weatherForecast.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -1,4 +1,4 @@
-package com.example.taskManager
+package com.example.weatherForecast
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

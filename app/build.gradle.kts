@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taskManager"
+    namespace = "com.example.weatherForecast"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.taskManager"
+        applicationId = "com.example.weatherForecast"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -52,7 +52,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -63,27 +62,15 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation (libs.androidx.material)
 
-
-
-    //Coil
-    implementation (libs.coil.compose)
-
-
     //Navigation
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
 
-
     //ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.compose)
 
-    // Hilt ViewModel extension
-    //implementation(libs.androidx.hilt.lifecycle.viewmodel)
-    //kapt(libs.androidx.hilt.compiler.v110beta01)
-
     // AndroidX ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.ktx.v220)
-
 
     //Dagger-Hil
     implementation(libs.dagger.hilt.android)
@@ -98,7 +85,6 @@ dependencies {
     implementation (libs.androidx.room.runtime.v250)
     kapt(libs.androidx.room.compiler)
     implementation (libs.androidx.room.ktx.v250)
-
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
