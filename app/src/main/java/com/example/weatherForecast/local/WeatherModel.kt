@@ -4,7 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class WeatherResponse(
     @SerializedName("list") val forecastList: List<ForecastItem>,
-    @SerializedName("city") val city: CityInfo
+    @SerializedName("city") val city: CityInfo,
+    @SerializedName("cod") val statusCode: String,
+    @SerializedName("message") val message: String
 )
 
 data class ForecastItem(

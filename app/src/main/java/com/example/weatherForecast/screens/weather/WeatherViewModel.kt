@@ -1,4 +1,4 @@
-package com.example.weatherForecast.ui.theme.weather
+package com.example.weatherForecast.screens.weather
 
 
 import android.os.Build
@@ -38,18 +38,21 @@ class WeatherViewModel @Inject constructor(
         _uiState.value = WeatherUiState.Loading
 
         viewModelScope.launch {
-            try {
-                val forecasts = repository.getWeather(_searchQuery.value, "d04c7693020bd4946eb38269f2a98879")
-                if (forecasts.isEmpty()) {
-                    _uiState.value = WeatherUiState.Error("No weather data found")
-                } else {
-                    _uiState.value = WeatherUiState.Success(forecasts)
-                }
-            } catch (e: Exception) {
-                _uiState.value = WeatherUiState.Error(
-                    e.message ?: "Failed to fetch weather data"
+            repository.getWeather(_searchQuery.value, "d04c7693020bd4946eb38269f2a98879")
+                .fold(
+                    onSuccess = { forecasts ->
+                        _uiState.value = if (forecasts.isEmpty()) {
+                            WeatherUiState.Error("No weather data found")
+                        } else {
+                            WeatherUiState.Success(forecasts)
+                        }
+                    },
+                    onFailure = { e ->
+                        _uiState.value = WeatherUiState.Error(
+                            e.message ?: "Failed to fetch weather data"
+                        )
+                    }
                 )
-            }
         }
     }
 }
